@@ -1,0 +1,11 @@
+- name: play1
+  hosts: all
+  tasks:
+    -name: run shell script
+     shell: uptime
+- name: play2
+  hosts: all
+  tasks:
+    - name: print hello
+    debug:
+      msg: hello
